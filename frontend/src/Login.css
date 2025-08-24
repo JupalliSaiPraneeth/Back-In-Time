@@ -1,0 +1,493 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    /* background-color: #fff; */
+}
+.login{
+    height: 50vh;
+    width: 50vw;
+    /* border: 2px solid #fff; */
+    position: relative;
+    left: 43%;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+   color: black;
+    background: linear-gradient(rgb(55, 208, 255),rgb(223, 153, 255));
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 10px black;
+    /* overflow: hidden; */
+    
+}
+.main{
+    position: relative;
+    right: 53%;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    width: 15rem;
+    background-color: #fff;
+    color: black;
+
+    
+}
+.giving{
+    margin-top: 2rem;
+}
+.login_btn{
+   margin: 1.5rem;
+   position: relative;
+   left: 3rem;
+   background-color: #fff;
+   color: black;
+   
+}
+.login_btn:hover{
+    transition: 0.5s;
+    background-color: #ccc;
+}
+.HT{
+    text-align: center;
+}
+.not_reg{
+    margin-left: 1.5rem;
+    color: #fff;
+}
+.sign_up{
+    color: #fff;
+}
+
+.ben_bg{
+    position: relative;
+    right: 50%;
+    height: 48vh;
+  
+     visibility: hidden;
+  display: block;
+  margin: 20px auto;
+  animation: float 1s ease-in-out 1;
+  animation-delay: 0;
+}
+@keyframes float{
+      /* 0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(15px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  } */
+
+
+
+
+
+
+    /* 0%{
+      transform: translateX(2rem) translateY(-1rem) rotate(0deg);
+    }
+    25%{
+     transform: translateX(224%) translateY(1rem) rotate(90deg);
+    }
+    50%{
+     transform: translateX(12rem) translateY(-1rem) rotate(180deg);
+    }
+    75%{
+      transform: translateX(224%) translateY(1rem) rotate(270deg);
+    }
+    100%{
+      transform: translateX(6rem) translateY(-1rem) rotate(360deg);
+    } */
+
+    from{
+        transform: translateX(-30rem);
+        opacity: 0.5;
+        /* visibility: visible; */
+    }
+    to{
+        transform: translateX(5rem);
+        visibility: visible;
+    }
+}
+
+.do_bg{
+    position: relative;
+    right: 20%;
+    animation: todo 1s ease-in-out 1;
+    animation-delay: 1.5s;
+    visibility: hidden;
+}
+@keyframes todo{
+    from{
+        transform: translateX(-30rem);
+        opacity: 0.5;
+        /* visibility: visible; */
+    }
+    to{
+        transform: translateX(14rem);
+        visibility: visible;
+    }
+}
+
+.shin_bg{
+    position: absolute;
+    height: 40vh;
+    left: 20%;
+    top: 10%;
+    animation: shin 1s ease-in-out 1;
+    animation-delay: 2.5s;
+    visibility: hidden;
+}
+@keyframes shin{
+  from{
+        transform: translateX(-30rem);
+        opacity: 0.5;
+        /* visibility: visible; */
+    }
+    to{
+        transform: translateX(-3rem);
+        visibility: visible;
+    }
+}
+.kick_bg{
+  position: absolute;
+    height: 50vh;
+    left: 20%;
+    top: 5%;
+    animation: shin 1s ease-in-out 1;
+    animation-delay: 3.5s;
+    visibility: hidden;
+}
+.tom_bg{
+  position: absolute;
+    height: 40vh;
+    /* width: 30vw; */
+    left: 20%;
+    top: 5%;
+    animation: toman 1s ease-in-out 1;
+    animation-delay: 4.5s;
+    visibility: hidden;
+}
+@keyframes toman{
+  from{
+        transform: translateX(-30rem);
+        opacity: 0.5;
+        /* visibility: visible; */
+    }
+    to{
+        transform: translateX(-7rem);
+        visibility: visible;
+    }
+}
+.bheem_bg{
+    position: absolute;
+    height: 50vh;
+    /* width: 30vw; */
+    left: 20%;
+    /* top: 5%; */
+    animation: shin 1s ease-in-out 1;
+    animation-delay: 5.5s;
+    visibility: hidden;
+}
+.krishna_bg{
+  position: absolute;
+    height: 50vh;
+    /* width: 30vw; */
+    left: 20%;
+    bottom: 5%;
+    /* top: 5%; */
+    animation: shin 1s ease-in-out 1;
+    animation-delay: 6.5s;
+    visibility: hidden;
+}
+
+.dan_bg{
+  position: absolute;
+    height: 33vh;
+    /* width: 30vw; */
+    left: 13%;
+    top: 10%;
+   visibility: hidden;
+   animation: opening 1s ease-in-out 1 both;
+   animation-delay: 8s;
+}
+@keyframes opening{
+   from{
+        transform: translateY(-10rem);
+        opacity: 0.5;
+        /* visibility: visible; */
+    }
+    to{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+.greet{
+  position: absolute;
+  top: 80%;
+  right: 56%;
+  animation: bounce 1.5s ease-in-out infinite 1s;
+  animation-delay: 0s;
+  visibility: hidden;
+}
+@keyframes bounce{
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+    visibility: visible;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+/* ----------responsive------------ */
+
+/* @media (max-width: 480px){
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .login{
+    height: 25vh;
+    width: 80vw;
+    position: relative;
+    margin-right: -14rem;
+  }
+  .main{
+    position: relative;
+    margin-right: 18rem;
+  }
+  .dan_bg{
+    visibility: hidden;
+  }
+} */
+
+
+/* ---------- Responsive Mobile View (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+  .login {
+    width: 90vw;
+    height: auto;
+    left: 0;
+    margin: 2rem auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .main {
+    position: relative;
+    right: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .login_btn {
+    left: 0;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .not_reg {
+    margin-left: 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* Hide or shrink background images for mobile */
+ 
+  /* .do_bg, */
+  .shin_bg,
+  /* .kick_bg, */
+  .tom_bg,
+  /* .bheem_bg, */
+  /* .krishna_bg, */
+  .dan_bg,.HT {
+    display: none;
+  }
+
+  .greet {
+    top: 5%;
+    bottom: 1rem;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+     animation: bounce 1.5s ease-in-out infinite 1s;
+  animation-delay: 0s;
+  visibility: hidden;
+  }
+  @keyframes bounce{
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+    visibility: visible;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: scale(1.5) translateY(2.2rem);
+
+    visibility: visible;
+  }
+}
+.ben_bg{
+      visibility: hidden;
+      position: absolute;
+      top: -120%;
+      left: 10%;
+      /* width: 200px;
+      opacity: 0; */
+      animation: fadeEffect 12s infinite;
+      animation-delay: 4s;
+    
+}
+@keyframes fadeEffect {
+      0%   { opacity: 0; }   /* invisible */
+      5%   { opacity: 1; 
+             visibility:visible;
+            transform: rotate(180deg) scale(1.2); }   /* fade in */
+      15%  { opacity: 1;
+      visibility: visible; 
+    transform: rotate(360deg) scale(1.7);}   /* stay visible */
+      20%  { opacity: 0; }   /* fade out */
+      100% { opacity: 0; }   /* invisible for rest of cycle */
+    }
+    .do_bg{
+       visibility: hidden;
+      position: absolute;
+      top: 120%;
+      left: 5%;
+      /* height: 100%;
+      width: 100%;
+      opacity: 0; */
+      animation: todo 12s infinite;
+      animation-delay: 2s;
+    }
+    @keyframes todo{
+    /* from{
+        transform: translateX(-30rem);
+        opacity: 0.5;
+        visibility: visible;
+    }
+    to{
+        transform: translateX(14rem);
+        visibility: visible;
+    } */
+         0%   { opacity: 0; }   /* invisible */
+      5%   { opacity: 1; 
+             visibility:visible;
+            transform: translateX(-10rem);
+          scale: 1.2; }   /* fade in */
+      15%  { opacity: 1;
+      visibility: visible; 
+     transform: translateX(-7rem)
+    scale(1.7)}   /* stay visible */
+      20%  { opacity: 0; }   /* fade out */
+      100% { opacity: 0; }   /* invisible for rest of cycle */
+}
+.kick_bg{
+   visibility: hidden;
+      position: absolute;
+      top: -140%;
+      left: 20%;
+      /* height: 15vh;
+      width: 100%;
+      opacity: 0; */
+      animation: fromtop 12s infinite;
+      animation-delay: 0s;
+}
+@keyframes fromtop {
+      0%   { opacity: 0; }   /* invisible */
+      5%   { opacity: 1; 
+             visibility:visible;
+            transform: translateY(10rem) scale(1.2); }   /* fade in */
+      15%  { opacity: 1;
+      visibility: visible; 
+     transform: translateY(0) scale(1.7)}   /* stay visible */
+      20%  { opacity: 0; }   /* fade out */
+      100% { opacity: 0; }   /* invisible for rest of cycle */
+}
+.krishna_bg{
+    visibility: hidden;
+      position: absolute;
+      top: 120%;
+      left: 25%;
+      /* height: 20vh;
+      width: 100%;
+      opacity: 0; */
+      animation: fromdown 12s infinite;
+      animation-delay: 6s;
+}
+@keyframes fromdown {
+    0%   { opacity: 0; }   /* invisible */
+      5%   { opacity: 1; 
+             visibility:visible;
+            transform: translateY(-10rem) scale(1.2); }   /* fade in */
+      15%  { opacity: 1;
+      visibility: visible; 
+     transform: translateY(0rem) scale(1.7)}   /* stay visible */
+      20%  { opacity: 0; }   /* fade out */
+      100% { opacity: 0; }   /* invisible for rest of cycle */
+}
+.bheem_bg{
+   visibility: hidden;
+      position: absolute;
+      top: -130%;
+      left: 20%;
+      /* height: 200vh; */
+      /* width: 100%; */
+      /* opacity: 0; */
+      animation: Bheem 12s infinite;
+      animation-delay: 8s;
+}
+@keyframes Bheem {
+  0%   { opacity: 0; }   /* invisible */
+      5%   { opacity: 1; 
+             visibility:visible;
+            transform: translateY(-10rem) scale(1.2) rotate(180deg); }   /* fade in */
+      15%  { opacity: 1;
+      visibility: visible; 
+     transform: translateY(0rem) scale(1.7) rotate(360deg)}   /* stay visible */
+      20%  { opacity: 0; }   /* fade out */
+      100% { opacity: 0; }   /* invisible for rest of cycle */
+}
+}
+
+
+
+
+
+ 
